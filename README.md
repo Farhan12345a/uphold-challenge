@@ -33,7 +33,7 @@ Single pass over the input runes using a `strings.Builder`:
 
 1. If the current character is not a digit, write it and continue.
 2. If it is a digit, collect the full consecutive digit run.
-3. If that run is immediately preceded by a `.`, it's a decimal fraction — write it as-is.
+3. If that run is immediately preceded by a `.`, it's a decimal fraction
 4. Otherwise, left-pad the run to width `X` using `fmt.Sprintf` and write it.
 
 ## Complexity
